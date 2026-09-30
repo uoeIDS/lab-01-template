@@ -214,14 +214,23 @@ _Observe in question 6 that the mean statistics across all settings are much lar
 
 **Write your answer here**
 
-
-
-
 ## Question 8
+
+### Exercise l.
+
+```{r Q8}
+#visitors %>% 
+#  summarise(
+#     __________,
+#     __________,
+#  )
+```
+
+## Question 9
 
 _What is the interquartile range (the width of the middle 50% of data set between the lower and upper quartiles) the for each of the four nations of the UK?_
 
-```{r Q8}
+```{r Q9}
 visitors_with_nations <- visitors %>%
   mutate(
     nation = case_when(
@@ -239,7 +248,7 @@ visitors_with_nations %>%
   )
 ```
 
-### Exercise l.
+### Exercise m.
 
 _How many tourist attractions are there in each of the 4 nations? From this, discuss in your group how reliable you think the inter-quartile estimates are._
 
@@ -253,7 +262,7 @@ _How many tourist attractions are there in each of the 4 nations? From this, dis
 
 # Challenging Exercises
 
-### Exercise m.
+### Exercise n.
 
 _Within each of the 4 nations, what is the proportion of tourist attractions that have free admission for all visitors?_
 
@@ -264,7 +273,7 @@ _Within each of the 4 nations, what is the proportion of tourist attractions tha
 ```
 
 
-### Exercise n.
+### Exercise o.
 
 _Calculate the percentage change in visitor admissions from 2021 to 2022. Of the tourist attractions in Scotland, sort into increasing numerical order the types of admission charges based on the mean percentage change in visitor numbers._
 
